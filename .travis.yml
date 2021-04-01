@@ -16,8 +16,8 @@ after_success:
   - docker build -t ankushanubhav/multi-server:version1 ./server
   - docker build -t ankushanubhav/multi-worker:version1 ./worker
 # Log in to docker CLI
-#  - docker login -u “$DOCKER_ID” -p “$DOCKER_PASSWORD” docker.io
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin 
+  - docker login -u “$DOCKER_ID” -p “$DOCKER_PASSWORD” docker.io
+#  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin 
 # Take all the images and push to docker hub
   - docker push ankushanubhav/multi-client:version1
   - docker push ankushanubhav/multi-nginx:version1
