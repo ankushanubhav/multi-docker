@@ -13,7 +13,7 @@ function App() {
           <img src={logo} className="App-logo" alt="logo" />
           <a
             className="App-link"
-            href="Fib Calculator"
+            href="Fib Calculator Version 2"
             target="_blank"
             rel="noopener noreferrer"
           >
